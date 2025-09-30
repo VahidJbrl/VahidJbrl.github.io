@@ -1,0 +1,165 @@
+/* Custom CSS for Visual Improvements */
+
+/* Better typography and spacing for the bio */
+.author__bio {
+  font-size: 0.95em;
+  line-height: 1.7;
+  margin-top: 1em;
+}
+
+/* Make the main title on homepage more prominent */
+.page__title {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+  color: #2c3e50;
+}
+
+/* Improve research section layout */
+.page__content h3 {
+  color: #2c3e50;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #e1e4e8;
+}
+
+/* Better image styling on research page */
+.page__content img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 1.5em 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page__content img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Improve button styling */
+.btn, .btn--primary {
+  border-radius: 6px;
+  padding: 0.6em 1.5em;
+  font-weight: 600;
+  text-transform: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Better paragraph spacing */
+.page__content p {
+  margin-bottom: 1.3em;
+  line-height: 1.7;
+}
+
+/* Improve list styling in main content */
+.page__content ul {
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.page__content ul li {
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+/* Add subtle background to author profile */
+.sidebar .author__avatar {
+  border: 3px solid #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Better link styling */
+.page__content a {
+  color: #0066cc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.page__content a:hover {
+  border-bottom-color: #0066cc;
+}
+
+/* Improve publication items */
+.archive__item {
+  padding: 1.2em;
+  margin-bottom: 1.5em;
+  background: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #0066cc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.archive__item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Better archive item titles */
+.archive__item-title {
+  margin-top: 0;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+/* Improve navigation */
+.greedy-nav a {
+  transition: color 0.2s ease;
+}
+
+/* Better spacing in CV downloads */
+.archive .btn {
+  margin-bottom: 2em;
+  display: inline-block;
+}
+
+/* Improve code blocks if you add any */
+code {
+  background: #f6f8fa;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Better author profile name */
+.author__name {
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+/* Improve social media icons */
+.author__urls li a {
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.author__urls li a:hover {
+  transform: translateX(3px);
+}
+
+/* Better footer spacing */
+.page__footer {
+  margin-top: 3em;
+  padding-top: 2em;
+}
+
+/* Improve emphasis text */
+.page__content strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Better quote styling */
+.page__content blockquote {
+  border-left: 4px solid #0066cc;
+  padding-left: 1.5em;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+}
