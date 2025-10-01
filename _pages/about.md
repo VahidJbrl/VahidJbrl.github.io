@@ -29,6 +29,16 @@ redirect_from:
   width: 300px;
   margin: 0 15px;
 }
+
+.scroll-item img {
+  height: 200px; /* Fixed height for all images */
+  width: 100%;
+  object-fit: cover; /* Ensures images are not distorted */
+}
+
+.scroll-title {
+  text-align: center; /* Center aligns the titles */
+}
 </style>
 
 In an era of exponentially growing AI, my work asks a critical question: **How do we achieve intelligent scale sustainably?**
