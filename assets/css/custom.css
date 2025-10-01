@@ -187,3 +187,74 @@ code {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+/*-- Scrolling Research Gallery --*/
+
+/* Defines the scrolling animation from right to left */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Moves the track by half its width */
+}
+
+/* The main container that hides the overflowing content */
+.scrolling-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin: 2.5em 0;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* The track that holds all the images and gets animated */
+.scrolling-track {
+  display: flex;
+  /* Adjust the width based on your items: (width of item) * (number of items) */
+  width: calc(340px * 6); 
+  animation: scroll 40s linear infinite;
+}
+
+/* Pause the animation when the user hovers over the gallery */
+.scrolling-wrapper:hover .scrolling-track {
+  animation-play-state: paused;
+}
+
+/* Styling for each individual research item */
+.scroll-item {
+  width: 340px; /* Width of each item */
+  flex-shrink: 0;
+  padding: 0 15px; /* Spacing between items */
+  text-align: center;
+}
+
+.scroll-item a {
+  display: block;
+  text-decoration: none;
+  border: none;
+}
+
+.scroll-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* The zoom-in effect on hover */
+.scroll-item a:hover img {
+  transform: scale(1.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the titles under the images */
+.scroll-title {
+  margin-top: 1em;
+  font-size: 0.95em;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.scroll-item a:hover .scroll-title {
+  color: #0066cc;
+}
