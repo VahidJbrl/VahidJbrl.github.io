@@ -7,6 +7,30 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.scrolling-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scrolling-track {
+  display: flex;
+  width: calc(2 * (3 * 300px)); /* 2 * (number of items * item width) */
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-item {
+  flex-shrink: 0;
+  width: 300px;
+  margin: 0 15px;
+}
+</style>
+
 In an era of exponentially growing AI, my work asks a critical question: **How do we achieve intelligent scale sustainably?**
 
 I am a Machine Learning and Computer Vision researcher, and a final-year Ph.D. candidate at North Carolina State University, where I architect the next generation of generative models and foundational vision systems. My research, summarized by the title of my thesis, *"Balanced Scalability for Sustainable ML"*, is focused on building AI that is not only powerful but also profoundly efficient. I move beyond brute-force computation to create systems with elegance, precision, and a deep understanding of the data they learn from.
@@ -15,6 +39,24 @@ I am a Machine Learning and Computer Vision researcher, and a final-year Ph.D. c
 
 <div class="scrolling-wrapper">
   <div class="scrolling-track">
+    <div class="scroll-item">
+      <a href="/research/">
+        <img src="/images/vitcae_architecture.png" alt="VITCAE Architecture">
+        <p class="scroll-title">VITCAE: ViT-based Class-conditioned Autoencoder</p>
+      </a>
+    </div>
+    <div class="scroll-item">
+      <a href="/research/">
+        <img src="/images/expansive_synthesis.png" alt="Expansive Synthesis Architecture">
+        <p class="scroll-title">Generative Expansion of Small Datasets</p>
+      </a>
+    </div>
+    <div class="scroll-item">
+      <a href="/research/">
+        <img src="/images/koopcon_architecture.png" alt="Koopcon Architecture">
+        <p class="scroll-title">Koopcon: A New Approach to Smarter Learning</p>
+      </a>
+    </div>
     <div class="scroll-item">
       <a href="/research/">
         <img src="/images/vitcae_architecture.png" alt="VITCAE Architecture">
