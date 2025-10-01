@@ -10,7 +10,8 @@ redirect_from:
 <style>
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  /* Animate to the width of the first set of items (3 items * 330px each) */
+  100% { transform: translateX(calc(-3 * 330px)); }
 }
 
 .scrolling-wrapper {
@@ -20,7 +21,8 @@ redirect_from:
 
 .scrolling-track {
   display: flex;
-  width: calc(2 * (3 * 300px)); /* 2 * (number of items * item width) */
+  /* Total width = 2 * (number of items * (item width + horizontal margins)) */
+  width: calc(6 * 330px); 
   animation: scroll 20s linear infinite;
 }
 
@@ -31,13 +33,17 @@ redirect_from:
 }
 
 .scroll-item img {
-  height: 200px; /* Fixed height for all images */
-  width: 100%;
-  object-fit: cover; /* Ensures images are not distorted */
+  height: 200px;   /* Fixed height for all images */
+  width: auto;     /* Width adjusts automatically to maintain aspect ratio */
+  max-width: 100%; /* Ensures the image doesn't overflow its container */
+  display: block;  /* Needed for horizontal margin auto centering */
+  margin: 0 auto;  /* Centers the image within the item */
 }
 
 .scroll-title {
   text-align: center; /* Center aligns the titles */
+  font-size: 0.9em;   /* Slightly reduced font size */
+  margin-top: 8px;    /* Adds a little space between the image and title */
 }
 </style>
 
