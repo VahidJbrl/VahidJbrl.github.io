@@ -11,6 +11,13 @@ In an era of exponentially growing AI, my work asks a critical question: **How d
 
 I am a Machine Learning and Computer Vision researcher, and a final-year Ph.D. candidate at North Carolina State University, where I architect the next generation of generative models and foundational vision systems. My research, summarized by the title of my thesis, *"Balanced Scalability for Sustainable ML"*, is focused on building AI that is not only powerful but also profoundly efficient. I move beyond brute-force computation to create systems with elegance, precision, and a deep understanding of the data they learn from.
 
+## A Quick Look at My Research
+<div class="research-gallery">
+  <a href="/research/"><img src="/images/vitcae_architecture.png" alt="VITCAE Architecture"></a>
+  <a href="/research/"><img src="/images/expansive_synthesis.png" alt="Expansive Synthesis Architecture"></a>
+  <a href="/research/"><img src="/images/koopcon_architecture.png" alt="Koopcon Architecture"></a>
+</div>
+
 ## My Approach: A Duality of Data Synthesis and Architectural Innovation
 
 Today's AI demands immense datasets and computational power. My research confronts this challenge head-on by reimagining how machines learn from and generate information, focusing on two core areas:
