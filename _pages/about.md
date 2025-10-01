@@ -33,25 +33,6 @@ I am a Machine Learning and Computer Vision researcher, and a final-year Ph.D. c
         <p class="scroll-title">Koopcon: A New Approach to Smarter Learning</p>
       </a>
     </div>
-
-    <div class="scroll-item">
-      <a href="/research/">
-        <img src="/images/vitcae_architecture.png" alt="VITCAE Architecture">
-        <p class="scroll-title">VITCAE: ViT-based Class-conditioned Autoencoder</p>
-      </a>
-    </div>
-    <div class="scroll-item">
-      <a href="/research/">
-        <img src="/images/expansive_synthesis.png" alt="Expansive Synthesis Architecture">
-        <p class="scroll-title">Generative Expansion of Small Datasets</p>
-      </a>
-    </div>
-    <div class="scroll-item">
-      <a href="/research/">
-        <img src="/images/koopcon_architecture.png" alt="Koopcon Architecture">
-        <p class="scroll-title">Koopcon: A New Approach to Smarter Learning</p>
-      </a>
-    </div>
   </div>
 </div>
 
