@@ -163,3 +163,27 @@ code {
   color: #555;
   font-style: italic;
 }
+/* Research Gallery on Home Page */
+.research-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5em;
+  margin: 2em 0;
+}
+
+.research-gallery a {
+  display: block;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.research-gallery a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
